@@ -1,0 +1,6 @@
+{
+  "hello": {
+    "secret": "world",
+    "command": "echo"
+  }
+}
