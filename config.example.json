@@ -2,5 +2,13 @@
   "hello": {
     "secret": "world",
     "command": "echo"
+  },
+  "sleep": {
+    "secret": "secret",
+    "command": "sleep 10"
+  },
+  "error": {
+    "secret": "secret",
+    "command": "sleep 3 && exit 1"
   }
 }

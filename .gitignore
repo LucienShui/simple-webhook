@@ -166,3 +166,4 @@ cython_debug/
 config.json
 home
 logs
+tasks.db

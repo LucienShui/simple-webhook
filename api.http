@@ -1,0 +1,45 @@
+## Normal task
+
+### Create task with parameters
+POST localhost:8000/api/webhook
+Content-Type: application/json
+Authorization: world
+
+{
+  "name": "hello",
+  "parameters": ["Hello World!"]
+}
+
+### Get task status
+GET localhost:8000/api/status?name=hello
+Authorization: world
+
+## Sleep task
+
+### Create task
+POST localhost:8000/api/webhook
+Content-Type: application/json
+Authorization: secret
+
+{
+  "name": "sleep"
+}
+
+### Get task status
+GET localhost:8000/api/status?name=sleep
+Authorization: secret
+
+## Error task
+
+### Create error task
+POST localhost:8000/api/webhook
+Content-Type: application/json
+Authorization: secret
+
+{
+  "name": "error"
+}
+
+### Get task status
+GET localhost:8000/api/status?name=error
+Authorization: secret
